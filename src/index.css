@@ -154,17 +154,18 @@
 .keyboardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 0.5rem;
+  gap: 0.5em;
 }
 
 .keyButton {
   font-family: monospace;
   background: none;
-  border: 3px solid black;
+  border: 1px solid black;
   aspect-ratio: 1/1;
   text-transform: uppercase;
   font-size: 2rem;
   cursor: pointer;
+  text-align: center;
 }
 
 .keyButton.active {
