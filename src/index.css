@@ -1,0 +1,182 @@
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.title {
+  font-family: monospace;
+  font-size: 3rem;
+  color: royalblue;
+}
+
+.goodluck {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: cornflowerblue;
+}
+
+.winner {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: green;
+  text-align: center;
+}
+
+.loser {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: red;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.drawingBox {
+  position: relative;
+}
+
+.rope {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 50px;
+  background-color: black;
+}
+
+.top {
+  height: 5px;
+  width: 100px;
+  margin-left: 60px;
+  background-color: black;
+}
+
+.pillar {
+  height: 200px;
+  width: 5px;
+  margin-left: 60px;
+  background-color: black;
+}
+
+.base {
+  height: 5px;
+  width: 125px;
+  background-color: black;
+}
+
+.head {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5px solid black;
+  position: absolute;
+  top: 50px;
+  right: -15px;
+}
+
+.body {
+  width: 5px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+}
+
+.rightArm {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 95px;
+  right: -25px;
+  transform: rotate(-30deg);
+  transform-origin: left bottom;
+}
+
+.leftArm {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 95px;
+  right: 5px;
+  transform: rotate(30deg);
+  transform-origin: right bottom;
+}
+
+.rightLeg {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 125px;
+  right: -25px;
+  transform: rotate(30deg);
+  transform-origin: left top;
+}
+
+.leftLeg {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 125px;
+  right: 5px;
+  transform: rotate(-30deg);
+  transform-origin: right top;
+}
+
+.wordContainer {
+  display: flex;
+  gap: 0.25em;
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.letters {
+  border-bottom: 0.1em solid black;
+}
+
+.keyboard {
+  align-self: stretch;
+}
+
+.keyboardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
+}
+
+.keyButton {
+  font-family: monospace;
+  background: none;
+  border: 3px solid black;
+  aspect-ratio: 1/1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.keyButton.active {
+  background-color: green;
+  font: white;
+}
+
+.keyButton.inactive {
+  opacity: 0.3;
+}
+
+.keyButton:hover:not(:disabled),
+.keyButton:focus:not(:disabled) {
+  background-color: orange;
+}
